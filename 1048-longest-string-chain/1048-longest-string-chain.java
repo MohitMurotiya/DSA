@@ -3,7 +3,6 @@ class Solution {
     public int longestStrChain(String[] words) {
         Arrays.sort(words, (a,b) -> a.length() - b.length()); //Ascending order
         Map<String, Integer> dp = new HashMap<>();
-        
         int res = 0;
         for(String word : words){
             int best = 0;
